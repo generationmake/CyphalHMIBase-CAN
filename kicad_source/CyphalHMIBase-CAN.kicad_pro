@@ -457,7 +457,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "CyphalPicoBase-CAN.kicad_pro",
+    "filename": "CyphalHMIBase-CAN.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -613,7 +613,7 @@
   "sheets": [
     [
       "9d6d512e-1439-4aa2-b0d9-afb2dddd9146",
-      ""
+      "Root"
     ],
     [
       "00000000-0000-0000-0000-00005ed92f9c",
