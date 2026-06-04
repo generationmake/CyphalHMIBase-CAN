@@ -622,6 +622,10 @@
     [
       "170c42d2-3061-4068-88d4-95acbb897a98",
       "Display"
+    ],
+    [
+      "946ce9e2-f514-4aac-a355-0a8039c4fd67",
+      "Rotary Encoder"
     ]
   ],
   "text_variables": {}

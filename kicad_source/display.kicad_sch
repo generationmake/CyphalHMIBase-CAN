@@ -640,6 +640,88 @@
 				)
 			)
 		)
+		(symbol "OpenCyphalPicoBase-rescue:MHP_3.2_5.8-MECH_mounting-holes"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "MECH"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MHP_3.2_5.8-MECH_mounting-holes"
+				(at 1.27 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "MECH_mounting_holes:MHP_3.2_5.8"
+				(at -2.54 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MHP_3.2_5.8-MECH_mounting-holes_1_1"
+				(rectangle
+					(start -2.54 2.54)
+					(end 2.54 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin bidirectional line
+					(at -7.62 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 148.59 48.26)
@@ -658,6 +740,22 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bf5e7496-854d-49b5-bb46-a9f6b56cafe4")
+	)
+	(no_connect
+		(at 59.69 187.96)
+		(uuid "6aceb574-ed0a-48e9-9b82-1e20a0c60a9c")
+	)
+	(no_connect
+		(at 34.29 187.96)
+		(uuid "bcd32e73-8911-4d1c-8a47-6894e7d8c778")
+	)
+	(no_connect
+		(at 85.09 187.96)
+		(uuid "d7e7a179-c816-4a74-a133-0c98606d45fe")
+	)
+	(no_connect
+		(at 110.49 187.96)
+		(uuid "f1ab75b6-57fe-4b3b-be99-dca6c3ba0467")
 	)
 	(wire
 		(pts
@@ -829,45 +927,16 @@
 		)
 		(uuid "f093f04a-9904-4f8f-a9ed-8d11ec6a4499")
 	)
-	(label "TFT_DC"
-		(at 139.7 53.34 0)
+	(text "mounting holes"
+		(exclude_from_sim no)
+		(at 34.29 182.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "2a08b053-5ed6-4806-a511-7c4a65001edc")
-	)
-	(label "SPI1_SCK"
-		(at 139.7 58.42 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "80c75975-f2e1-4ebe-a1e4-c390b9005db5")
-	)
-	(label "TFT_RST"
-		(at 139.7 50.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a31dc26e-ecbd-4eaa-b30d-d6a75a8d8830")
-	)
-	(label "TFT_CS"
-		(at 139.7 48.26 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "aee0f34c-9f89-437b-bbec-e0edbf378b53")
+		(uuid "12741c91-d069-46dc-9ba8-1c1576d4394f")
 	)
 	(label "SPI1_MOSI"
 		(at 139.7 55.88 0)
@@ -877,103 +946,47 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "ea5f7679-d8a9-431f-81ab-6abac6c48d4f")
+		(uuid "0a8afc20-6df8-45a6-aada-0918123d381a")
 	)
-	(global_label "SPI1_SCK"
-		(shape input)
-		(at 130.81 58.42 180)
-		(fields_autoplaced yes)
+	(label "TFT_CS"
+		(at 139.7 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left bottom)
 		)
-		(uuid "054f3e59-cc86-4b19-becb-4e6a8bce9042")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 119.4681 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Referenzen zwischen Schaltplänen" "${INTERSHEET_REFS}"
-			(at 130.81 60.2552 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
+		(uuid "44ed7178-df3e-44f2-8d3d-373e4f2508bc")
 	)
-	(global_label "SPI1_MOSI"
-		(shape input)
-		(at 130.81 55.88 180)
-		(fields_autoplaced yes)
+	(label "TFT_DC"
+		(at 139.7 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left bottom)
 		)
-		(uuid "38942f19-8422-4e57-acfc-baf40fc988b5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.6214 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Referenzen zwischen Schaltplänen" "${INTERSHEET_REFS}"
-			(at 130.81 57.7152 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
+		(uuid "59f04154-8073-4b1c-a9a5-554b35cd1ef6")
 	)
-	(global_label "TFT_RST"
-		(shape input)
-		(at 130.81 50.8 180)
-		(fields_autoplaced yes)
+	(label "SPI1_SCK"
+		(at 139.7 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left bottom)
 		)
-		(uuid "a14a3941-41af-4bf8-beee-9086b952442e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.0405 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
+		(uuid "8fb2c5d2-88d8-42bb-a9b0-73a81fdd7705")
+	)
+	(label "TFT_RST"
+		(at 139.7 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left bottom)
 		)
-		(property "Referenzen zwischen Schaltplänen" "${INTERSHEET_REFS}"
-			(at 130.81 52.6352 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
+		(uuid "953b1d3e-3214-43ca-9075-f65cccda32a3")
 	)
 	(global_label "TFT_DC"
 		(shape input)
@@ -985,7 +998,7 @@
 			)
 			(justify right)
 		)
-		(uuid "cbaca60e-74e9-46de-bb9e-da78be31fcbf")
+		(uuid "109f27ca-a923-4086-9353-8b87f2db0026")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 121.9476 53.34 0)
 			(effects
@@ -1017,7 +1030,7 @@
 			)
 			(justify right)
 		)
-		(uuid "d4190b3c-bd28-49c5-9fb9-856cb2dc3593")
+		(uuid "30f5a111-189f-4043-80c4-a6f64da3b7a4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 122.0081 48.26 0)
 			(effects
@@ -1039,17 +1052,113 @@
 			)
 		)
 	)
+	(global_label "TFT_RST"
+		(shape input)
+		(at 130.81 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5c93def1-4783-473e-996c-b0ec5a0f0955")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.0405 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Referenzen zwischen Schaltplänen" "${INTERSHEET_REFS}"
+			(at 130.81 52.6352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SPI1_SCK"
+		(shape input)
+		(at 130.81 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "911603e9-5952-40ae-b387-96ad3003f4e8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 119.4681 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Referenzen zwischen Schaltplänen" "${INTERSHEET_REFS}"
+			(at 130.81 60.2552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SPI1_MOSI"
+		(shape input)
+		(at 130.81 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ceeca69e-7a1f-4cfe-862d-bfd394b0b8e4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 118.6214 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Referenzen zwischen Schaltplänen" "${INTERSHEET_REFS}"
+			(at 130.81 57.7152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 156.21 41.91 0)
+		(lib_id "OpenCyphalPicoBase-rescue:MHP_3.2_5.8-MECH_mounting-holes")
+		(at 41.91 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ed984ae")
-		(property "Reference" "R6"
-			(at 157.7086 40.7416 0)
+		(uuid "07751dda-9177-4766-9377-91efd4b5a39b")
+		(property "Reference" "MECH5"
+			(at 45.1612 186.7916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1057,8 +1166,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 157.7086 43.053 0)
+		(property "Value" "MHP_3.2_5.8"
+			(at 45.1612 189.103 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1066,8 +1175,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 156.21 45.72 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad"
+			(at 39.37 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1076,15 +1185,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 156.21 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 156.21 41.91 0)
+			(at 41.91 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1092,8 +1193,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25804"
-			(at 156.21 41.91 0)
+		(property "Description" ""
+			(at 41.91 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1102,31 +1203,46 @@
 			)
 		)
 		(pin "1"
-			(uuid "aa788a42-20f7-40d9-b051-478fdd54d864")
-		)
-		(pin "2"
-			(uuid "f45f8c81-20b7-4ec2-b95e-bcc5842e74c9")
+			(uuid "60754dcd-cebf-4a6c-9a80-5c57af971f33")
 		)
 		(instances
 			(project "CyphalHMIBase-CAN"
 				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/170c42d2-3061-4068-88d4-95acbb897a98"
-					(reference "R6")
+					(reference "MECH5")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "OpenCyphalPicoBase-rescue:+3.3V-power-supply")
-		(at 156.21 38.1 0)
+		(lib_id "OpenCyphalPicoBase-rescue:MHP_3.2_5.8-MECH_mounting-holes")
+		(at 67.31 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ed98861")
-		(property "Reference" "#PWR6"
-			(at 156.21 41.91 0)
+		(uuid "1d1394cc-5682-4569-a82e-fdfbcd9e6970")
+		(property "Reference" "MECH6"
+			(at 70.5612 186.7916 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MHP_3.2_5.8"
+			(at 70.5612 189.103 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad"
+			(at 64.77 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1134,32 +1250,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 156.591 33.7058 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 156.21 38.1 0)
+			(at 67.31 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 156.21 38.1 0)
+			(at 67.31 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1168,12 +1269,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "426ed30d-7e7a-438a-8aa4-f96e793c3092")
+			(uuid "98e593dd-a788-4db0-a0cb-d4909a190b57")
 		)
 		(instances
 			(project "CyphalHMIBase-CAN"
 				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/170c42d2-3061-4068-88d4-95acbb897a98"
-					(reference "#PWR6")
+					(reference "MECH6")
 					(unit 1)
 				)
 			)
@@ -1187,8 +1288,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ed995b6")
-		(property "Reference" "R5"
+		(uuid "2188cfc1-c85e-4798-b9d8-44605fac16ed")
+		(property "Reference" "R12"
 			(at 150.0886 40.7416 0)
 			(effects
 				(font
@@ -1242,31 +1343,49 @@
 			)
 		)
 		(pin "1"
-			(uuid "98e2bdb2-e744-42fb-92ec-244ef30abe90")
+			(uuid "7d48a6d3-bdd7-437c-a77b-1da438713179")
 		)
 		(pin "2"
-			(uuid "26b1809f-1031-4ec2-8bc1-c4a274595df3")
+			(uuid "6ccf08c1-073c-456f-b35e-a750bbc41275")
 		)
 		(instances
 			(project "CyphalHMIBase-CAN"
 				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/170c42d2-3061-4068-88d4-95acbb897a98"
-					(reference "R5")
+					(reference "R12")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "OpenCyphalPicoBase-rescue:+3.3V-power-supply")
-		(at 148.59 38.1 0)
+		(lib_id "Device:R_Small")
+		(at 156.21 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ed995c0")
-		(property "Reference" "#PWR4"
-			(at 148.59 41.91 0)
+		(uuid "389886e7-30e3-4960-bbc2-f55c8ebc1db2")
+		(property "Reference" "R13"
+			(at 157.7086 40.7416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 157.7086 43.053 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 156.21 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1274,24 +1393,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 148.971 33.7058 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.59 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 148.59 38.1 0)
+			(at 156.21 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1299,7 +1402,16 @@
 			)
 		)
 		(property "Description" ""
-			(at 148.59 38.1 0)
+			(at 156.21 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 156.21 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1308,12 +1420,144 @@
 			)
 		)
 		(pin "1"
-			(uuid "07a3feb5-4614-4544-8697-9fe2157c3aa4")
+			(uuid "b7a31b3c-cf2f-41b0-8f14-3fc89eeba51f")
+		)
+		(pin "2"
+			(uuid "2bdda6b8-5e8d-4094-b96c-23712c542a74")
 		)
 		(instances
 			(project "CyphalHMIBase-CAN"
 				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/170c42d2-3061-4068-88d4-95acbb897a98"
-					(reference "#PWR4")
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OpenCyphalPicoBase-rescue:MHP_3.2_5.8-MECH_mounting-holes")
+		(at 118.11 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "64e495db-5aa9-4584-bfe1-4be90f7aa49d")
+		(property "Reference" "MECH8"
+			(at 121.3612 186.7916 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MHP_3.2_5.8"
+			(at 121.3612 189.103 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad"
+			(at 115.57 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 118.11 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "143c5bb7-8f53-4a1c-a537-60fc1a887417")
+		)
+		(instances
+			(project "CyphalHMIBase-CAN"
+				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/170c42d2-3061-4068-88d4-95acbb897a98"
+					(reference "MECH8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OpenCyphalPicoBase-rescue:+3.3V-power-supply")
+		(at 156.21 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "76211645-3892-458e-8135-7218889f529d")
+		(property "Reference" "#PWR43"
+			(at 156.21 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 156.591 33.7058 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 156.21 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0f67bbcf-3bb7-418d-b962-ea1f21b18bf6")
+		)
+		(instances
+			(project "CyphalHMIBase-CAN"
+				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/170c42d2-3061-4068-88d4-95acbb897a98"
+					(reference "#PWR43")
 					(unit 1)
 				)
 			)
@@ -1327,8 +1571,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005eda8fcf")
-		(property "Reference" "#PWR3"
+		(uuid "83e7bc10-247d-4536-9a40-f39b3650ae46")
+		(property "Reference" "#PWR45"
 			(at 167.64 44.45 0)
 			(effects
 				(font
@@ -1371,12 +1615,75 @@
 			)
 		)
 		(pin "1"
-			(uuid "687d4be2-7961-4b5c-be2e-f3840f886204")
+			(uuid "a3f00ffe-1d51-47b3-8aee-384bdf353163")
 		)
 		(instances
 			(project "CyphalHMIBase-CAN"
 				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/170c42d2-3061-4068-88d4-95acbb897a98"
-					(reference "#PWR3")
+					(reference "#PWR45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OpenCyphalPicoBase-rescue:+3.3V-power-supply")
+		(at 148.59 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "92b16fc4-58df-41fd-aaa5-5e7c7d516fab")
+		(property "Reference" "#PWR42"
+			(at 148.59 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 148.971 33.7058 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 148.59 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a4f0f963-5d7e-47f1-8119-2f36e250b5b7")
+		)
+		(instances
+			(project "CyphalHMIBase-CAN"
+				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/170c42d2-3061-4068-88d4-95acbb897a98"
+					(reference "#PWR42")
 					(unit 1)
 				)
 			)
@@ -1390,8 +1697,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "00000000-0000-0000-0000-000062514af6")
-		(property "Reference" "#PWR12"
+		(uuid "c2d21e19-1981-42da-9dac-906c904ad11f")
+		(property "Reference" "#PWR44"
 			(at 165.1 69.85 0)
 			(effects
 				(font
@@ -1434,12 +1741,78 @@
 			)
 		)
 		(pin "1"
-			(uuid "6def3862-5817-4bb9-bb36-7401aa18d9a3")
+			(uuid "697adbe3-a2d6-4d59-a00f-050f7a622b79")
 		)
 		(instances
 			(project "CyphalHMIBase-CAN"
 				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/170c42d2-3061-4068-88d4-95acbb897a98"
-					(reference "#PWR12")
+					(reference "#PWR44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OpenCyphalPicoBase-rescue:MHP_3.2_5.8-MECH_mounting-holes")
+		(at 92.71 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "cdc3fcf3-97f4-41b6-8fb5-7136cbfaf99e")
+		(property "Reference" "MECH7"
+			(at 95.9612 186.7916 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MHP_3.2_5.8"
+			(at 95.9612 189.103 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad"
+			(at 90.17 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 92.71 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef2dd3ef-12cb-477e-8146-91b5d4a80525")
+		)
+		(instances
+			(project "CyphalHMIBase-CAN"
+				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/170c42d2-3061-4068-88d4-95acbb897a98"
+					(reference "MECH7")
 					(unit 1)
 				)
 			)
@@ -1501,28 +1874,28 @@
 			)
 		)
 		(pin "8"
-			(uuid "df0406ac-c5eb-4c52-8e2d-2f1ccdf70314")
+			(uuid "f558fdc9-3b4b-48c9-8afe-674c1d39b76b")
 		)
 		(pin "3"
-			(uuid "4ba12bb9-cbc3-4d98-b9aa-468451ce32b9")
+			(uuid "a5ca9a06-1706-4e61-a0d2-cb836f6c5e69")
 		)
 		(pin "2"
-			(uuid "b6e682d2-c038-49e4-b7c7-0b276ff2229a")
+			(uuid "7823c168-8b4f-4c87-bbfc-164a080face8")
 		)
 		(pin "1"
-			(uuid "f80cedb3-db25-49c2-93ff-0b586df070df")
+			(uuid "7394ff3e-fd1d-4979-b146-6da0040df531")
 		)
 		(pin "7"
-			(uuid "ba95152e-3a61-4ebe-b9f2-5f39d436efc2")
+			(uuid "e9f45754-70b5-497a-8814-2ed9d36e948b")
 		)
 		(pin "6"
-			(uuid "9d68c90d-fa04-4906-8fb5-535cf18fcf7f")
+			(uuid "a3c87062-e4ba-4e62-baea-f7d0b1223df0")
 		)
 		(pin "5"
-			(uuid "83125673-6978-4f90-ab57-c06e7b893703")
+			(uuid "7213488f-9162-4df6-becc-490315c73a65")
 		)
 		(pin "4"
-			(uuid "2951221c-33da-4fcb-aaff-5ea12df44d52")
+			(uuid "dfe71114-cb4a-44b0-a5e2-255860bad6fc")
 		)
 		(instances
 			(project ""
