@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "CyphalIMUBase/CAN")
-		(date "2026-06-03")
+		(date "2026-06-05")
 		(rev "0.1")
 		(company "generationmake")
 	)
@@ -1122,10 +1122,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "7d48a6d3-bdd7-437c-a77b-1da438713179")
+			(uuid "bc8aa915-f50e-443c-b1b6-58243c7b5356")
 		)
 		(pin "2"
-			(uuid "6ccf08c1-073c-456f-b35e-a750bbc41275")
+			(uuid "d3fde6fe-5b11-4b63-bc0f-d7f4dcbc274d")
 		)
 		(instances
 			(project "CyphalHMIBase-CAN"
@@ -1188,7 +1188,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "3897cb6d-5a78-45e2-bfe7-29fc59b18ebf")
+			(uuid "6d6acdad-91df-46a7-a4e0-024a7490de7a")
 		)
 		(instances
 			(project "CyphalHMIBase-CAN"
@@ -1251,7 +1251,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "a4f0f963-5d7e-47f1-8119-2f36e250b5b7")
+			(uuid "b89d5c52-f53a-4790-9f93-8dcfd06be09a")
 		)
 		(instances
 			(project "CyphalHMIBase-CAN"
@@ -1325,10 +1325,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "e0a0e6dc-e6d5-479e-86dc-e01cf88a3802")
+			(uuid "0e941bb0-4884-473f-8a43-284f30b414fc")
 		)
 		(pin "2"
-			(uuid "d6b865c4-a822-42b4-95f8-bcb87a4ca077")
+			(uuid "1e0e8836-e4e5-4648-b071-906b90fc9e16")
 		)
 		(instances
 			(project "CyphalHMIBase-CAN"
@@ -1393,30 +1393,22 @@
 			)
 		)
 		(pin "MP"
-			(uuid "142b6f27-6266-424e-98c7-60e82dfc8124")
+			(uuid "85532255-28d0-4605-afe1-cf33dd9b0dac")
 		)
 		(pin "A"
-			(uuid "3646bca0-3a70-47b4-aea3-41f71b6f5a29")
+			(uuid "1386ba15-a9f3-4845-a264-3ce83bc4d62c")
 		)
 		(pin "C"
-			(uuid "6e3cc3ec-30a4-4902-b3d7-f462c0098663")
+			(uuid "c5e7a5eb-4792-48ce-a4d8-b7b0db6011ea")
 		)
 		(pin "S1"
-			(uuid "c6a2ce93-8187-46ba-973a-5a0516247c79")
+			(uuid "2181d092-5d24-437c-acba-5439bd426365")
 		)
 		(pin "B"
-			(uuid "8a235590-fbcb-4411-91a3-bea93f1d6012")
+			(uuid "2fbc87ad-f8f3-4207-80a5-42597969d146")
 		)
 		(pin "S2"
-			(uuid "d8da4524-2b5b-4391-93e5-d3b4428b4b74")
-		)
-		(instances
-			(project ""
-				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/946ce9e2-f514-4aac-a355-0a8039c4fd67"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
+			(uuid "8b2660c5-7e3f-48ba-a2b5-d64538fa2975")
 		)
 	)
 	(symbol
@@ -1471,7 +1463,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "697adbe3-a2d6-4d59-a00f-050f7a622b79")
+			(uuid "9a8957c2-fc62-4b14-884d-22b95fd6161b")
 		)
 		(instances
 			(project "CyphalHMIBase-CAN"
@@ -1545,10 +1537,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "b7a31b3c-cf2f-41b0-8f14-3fc89eeba51f")
+			(uuid "b71a0d84-be59-465a-b388-44641539f75d")
 		)
 		(pin "2"
-			(uuid "2bdda6b8-5e8d-4094-b96c-23712c542a74")
+			(uuid "f740b69f-04ca-45d4-9fd9-a7fead3386fc")
 		)
 		(instances
 			(project "CyphalHMIBase-CAN"
@@ -1611,7 +1603,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "0f67bbcf-3bb7-418d-b962-ea1f21b18bf6")
+			(uuid "47790965-75fd-40e2-a5d9-30dd4e56d83e")
 		)
 		(instances
 			(project "CyphalHMIBase-CAN"
@@ -1674,7 +1666,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "a18be816-5141-488e-aed4-f940bd333fdd")
+			(uuid "c16c8e93-4c97-4c47-9fad-217d64189631")
 		)
 		(instances
 			(project "CyphalHMIBase-CAN"

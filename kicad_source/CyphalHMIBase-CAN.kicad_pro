@@ -626,6 +626,10 @@
     [
       "946ce9e2-f514-4aac-a355-0a8039c4fd67",
       "Rotary Encoder"
+    ],
+    [
+      "e75f9fc4-b9ac-41b4-8a83-2ca859e56dc6",
+      "SD Card"
     ]
   ],
   "text_variables": {}

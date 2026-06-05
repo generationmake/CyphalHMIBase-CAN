@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "CyphalIMUBase/CAN")
-		(date "2026-06-03")
+		(date "2026-06-05")
 		(rev "0.1")
 		(company "generationmake")
 	)
@@ -2739,10 +2739,6 @@
 		(uuid "25738cc6-cd2e-487b-ade1-27ee12c16fa5")
 	)
 	(no_connect
-		(at 140.97 49.53)
-		(uuid "3d95f54d-0682-406c-8c64-42569763d85e")
-	)
-	(no_connect
 		(at 140.97 31.75)
 		(uuid "537d6aeb-f95f-42bc-9d99-260a19f487fc")
 	)
@@ -3562,6 +3558,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 49.53) (xy 140.97 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98e686be-29d2-490b-8f0c-24baa8902f03")
+	)
+	(wire
+		(pts
 			(xy 130.81 147.32) (xy 124.46 147.32)
 		)
 		(stroke
@@ -4177,6 +4183,16 @@
 		)
 		(uuid "8c0a7b4f-98ce-4ee3-a2ab-bb0428d9b0f8")
 	)
+	(label "SD_CS"
+		(at 133.35 64.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "91b05c75-e697-4e83-96ed-07b274c650fa")
+	)
 	(label "I2C_SCL"
 		(at 40.64 175.26 180)
 		(effects
@@ -4388,7 +4404,7 @@
 		(uuid "fdc4d373-c93a-470a-8eab-8ebddf312230")
 	)
 	(label "ROT_SW"
-		(at 133.35 64.77 180)
+		(at 133.35 49.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4557,7 +4573,7 @@
 	)
 	(global_label "ROT_SW"
 		(shape input)
-		(at 120.65 64.77 180)
+		(at 120.65 49.53 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4567,7 +4583,71 @@
 		)
 		(uuid "63ca8c24-50c5-4648-9166-409df2789527")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 111.1224 64.77 0)
+			(at 111.1224 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Referenzen zwischen Schaltplänen" "${INTERSHEET_REFS}"
+			(at 120.65 51.3652 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SPI1_MISO"
+		(shape input)
+		(at 120.65 62.23 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "70bc2c56-75a0-4f5f-811e-e1c4c1fc98ad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 108.4614 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Referenzen zwischen Schaltplänen" "${INTERSHEET_REFS}"
+			(at 120.65 64.0652 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SD_CS"
+		(shape output)
+		(at 120.65 64.77 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bf210879-0478-4684-a806-4e2eff67a022")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 112.3924 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8609,6 +8689,44 @@
 			(project "CyphalHMIBase-CAN"
 				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146"
 					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 165.1 101.6)
+		(size 25.4 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e75f9fc4-b9ac-41b4-8a83-2ca859e56dc6")
+		(property "Sheetname" "SD Card"
+			(at 165.1 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sd_card.kicad_sch"
+			(at 165.1 114.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CyphalHMIBase-CAN"
+				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146"
+					(page "5")
 				)
 			)
 		)
