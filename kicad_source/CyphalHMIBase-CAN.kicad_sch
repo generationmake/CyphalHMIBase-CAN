@@ -2731,10 +2731,6 @@
 		(uuid "f92e5537-201b-4923-a554-6642ccacd5ff")
 	)
 	(no_connect
-		(at 140.97 34.29)
-		(uuid "0a01b05b-74a8-4b42-9d15-e7e4bb41dfa2")
-	)
-	(no_connect
 		(at 219.71 36.83)
 		(uuid "25738cc6-cd2e-487b-ade1-27ee12c16fa5")
 	)
@@ -3534,6 +3530,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 34.29) (xy 140.97 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "918a85dc-2f1a-4c4c-a9a0-14eb8f39d1ac")
+	)
+	(wire
+		(pts
 			(xy 120.65 57.15) (xy 140.97 57.15)
 		)
 		(stroke
@@ -4138,6 +4144,16 @@
 			(justify right bottom)
 		)
 		(uuid "53d17558-7e0c-41ca-964b-fd8bd183b0af")
+	)
+	(label "TFT_BKLT"
+		(at 133.35 34.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6dd98372-aace-48e1-bba0-7eea9bfb26b3")
 	)
 	(label "TFT_CS"
 		(at 133.35 44.45 180)
@@ -4867,6 +4883,38 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TFT_BKLT"
+		(shape output)
+		(at 120.65 34.29 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e28acd00-b922-4ef1-9a92-80b0ae6ef370")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 109.7919 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Referenzen zwischen Schaltplänen" "${INTERSHEET_REFS}"
+			(at 120.65 36.1252 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
