@@ -5,7 +5,7 @@
 	(uuid "7eb8852c-cf80-462b-adc0-c50228bc20cf")
 	(paper "A4")
 	(title_block
-		(title "CyphalIMUBase/CAN")
+		(title "CyphalHMIBase/CAN")
 		(date "2026-06-05")
 		(rev "0.1")
 		(company "generationmake")

@@ -5,7 +5,7 @@
 	(uuid "7eb8852c-cf80-462b-adc0-c50228bc20cf")
 	(paper "A4")
 	(title_block
-		(title "CyphalIMUBase/CAN")
+		(title "CyphalHMIBase/CAN")
 		(date "2026-06-05")
 		(rev "0.1")
 		(company "generationmake")
@@ -1206,6 +1206,69 @@
 		)
 	)
 	(symbol
+		(lib_id "OpenCyphalPicoBase-rescue:+3.3V-power-supply")
+		(at 133.35 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "09aee2db-33d1-4698-8d0f-ddb577cfa760")
+		(property "Reference" "#PWR53"
+			(at 133.35 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 133.731 107.3658 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "47790965-75fd-40e2-a5d9-30dd4e56d83e")
+		)
+		(instances
+			(project "CyphalHMIBase-CAN"
+				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/e75f9fc4-b9ac-41b4-8a83-2ca859e56dc6"
+					(reference "#PWR53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 152.4 96.52 0)
 		(unit 1)
@@ -1515,6 +1578,69 @@
 	)
 	(symbol
 		(lib_id "OpenCyphalPicoBase-rescue:GND-power-supply")
+		(at 133.35 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4aecfd22-f0d0-4e1b-816e-fc78668e4e54")
+		(property "Reference" "#PWR55"
+			(at 133.35 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 133.477 154.2542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c16c8e93-4c97-4c47-9fad-217d64189631")
+		)
+		(instances
+			(project "CyphalHMIBase-CAN"
+				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/e75f9fc4-b9ac-41b4-8a83-2ca859e56dc6"
+					(reference "#PWR55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OpenCyphalPicoBase-rescue:GND-power-supply")
 		(at 152.4 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1732,83 +1858,6 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 109.22 115.57 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "95e0fd0d-8425-4ba9-91e5-7f7fdb9ed3ce")
-		(property "Reference" "R18"
-			(at 110.7186 114.4016 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 110.7186 116.713 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 109.22 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 109.22 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25804"
-			(at 109.22 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0e941bb0-4884-473f-8a43-284f30b414fc")
-		)
-		(pin "2"
-			(uuid "1e0e8836-e4e5-4648-b071-906b90fc9e16")
-		)
-		(instances
-			(project "CyphalHMIBase-CAN"
-				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/e75f9fc4-b9ac-41b4-8a83-2ca859e56dc6"
-					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
 		(at 85.09 128.27 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1885,6 +1934,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 109.22 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cdc785ae-26da-483d-befa-7f0250a32cb4")
+		(property "Reference" "R18"
+			(at 110.7186 114.4016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 110.7186 116.713 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 109.22 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 109.22 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 109.22 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e941bb0-4884-473f-8a43-284f30b414fc")
+		)
+		(pin "2"
+			(uuid "1e0e8836-e4e5-4648-b071-906b90fc9e16")
+		)
+		(instances
+			(project "CyphalHMIBase-CAN"
+				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/e75f9fc4-b9ac-41b4-8a83-2ca859e56dc6"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "OpenCyphalPicoBase-rescue:+3.3V-power-supply")
 		(at 152.4 92.71 0)
 		(unit 1)
@@ -1942,132 +2068,6 @@
 			(project "CyphalHMIBase-CAN"
 				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/e75f9fc4-b9ac-41b4-8a83-2ca859e56dc6"
 					(reference "#PWR51")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "OpenCyphalPicoBase-rescue:+3.3V-power-supply")
-		(at 133.35 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e8dce752-c70c-4a0a-a863-ca02cb9de331")
-		(property "Reference" "#PWR53"
-			(at 133.35 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 133.731 107.3658 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 133.35 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 133.35 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 133.35 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "47790965-75fd-40e2-a5d9-30dd4e56d83e")
-		)
-		(instances
-			(project "CyphalHMIBase-CAN"
-				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/e75f9fc4-b9ac-41b4-8a83-2ca859e56dc6"
-					(reference "#PWR53")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "OpenCyphalPicoBase-rescue:GND-power-supply")
-		(at 133.35 149.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fbc44030-64b2-4d3e-8170-6f29378d7ef0")
-		(property "Reference" "#PWR55"
-			(at 133.35 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 133.477 154.2542 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 133.35 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 133.35 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 133.35 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c16c8e93-4c97-4c47-9fad-217d64189631")
-		)
-		(instances
-			(project "CyphalHMIBase-CAN"
-				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/e75f9fc4-b9ac-41b4-8a83-2ca859e56dc6"
-					(reference "#PWR55")
 					(unit 1)
 				)
 			)

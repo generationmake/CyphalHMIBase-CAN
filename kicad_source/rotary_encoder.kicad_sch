@@ -5,7 +5,7 @@
 	(uuid "7eb8852c-cf80-462b-adc0-c50228bc20cf")
 	(paper "A4")
 	(title_block
-		(title "CyphalIMUBase/CAN")
+		(title "CyphalHMIBase/CAN")
 		(date "2026-06-05")
 		(rev "0.1")
 		(company "generationmake")
@@ -730,6 +730,151 @@
 				)
 			)
 		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 133.35 67.31)
@@ -742,6 +887,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3a127088-9754-4803-946c-e40277f68938")
+	)
+	(junction
+		(at 135.89 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9f6d8783-6603-4dde-8a07-081d5e2489e3")
 	)
 	(junction
 		(at 127 86.36)
@@ -785,6 +936,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 139.7) (xy 154.94 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4724375a-ac35-41ed-9fc1-44bfeb8a56e2")
+	)
+	(wire
+		(pts
 			(xy 140.97 88.9) (xy 140.97 97.79)
 		)
 		(stroke
@@ -825,6 +986,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 132.08) (xy 135.89 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74ba54ab-bfe8-4c6e-88ed-58fd9bbc7f94")
+	)
+	(wire
+		(pts
 			(xy 133.35 66.04) (xy 133.35 67.31)
 		)
 		(stroke
@@ -855,6 +1026,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 139.7) (xy 154.94 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e84d227-24c9-47b7-ab8e-b6660c271206")
+	)
+	(wire
+		(pts
 			(xy 133.35 78.74) (xy 133.35 80.01)
 		)
 		(stroke
@@ -875,6 +1056,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 138.43) (xy 135.89 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab3f85ac-ea3f-46e2-9e3c-e2bd3b07a45f")
+	)
+	(wire
+		(pts
 			(xy 133.35 91.44) (xy 143.51 91.44)
 		)
 		(stroke
@@ -882,6 +1073,16 @@
 			(type default)
 		)
 		(uuid "bfe2ab47-b518-463e-ad1d-064b76cbeb9d")
+	)
+	(wire
+		(pts
+			(xy 115.57 139.7) (xy 135.89 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5c8f71a-1ec1-45b2-90ad-4c81a55a5e56")
 	)
 	(wire
 		(pts
@@ -902,6 +1103,16 @@
 			(type default)
 		)
 		(uuid "c8aefc65-6b56-4498-a0de-01739686c8de")
+	)
+	(wire
+		(pts
+			(xy 135.89 139.7) (xy 142.24 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cec3cda4-9f2d-47cf-bbfe-3049fb3243c8")
 	)
 	(wire
 		(pts
@@ -963,6 +1174,16 @@
 		)
 		(uuid "95d56576-74bd-48e7-ad27-9172cf24bfbf")
 	)
+	(label "SWITCH1"
+		(at 119.38 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9a7010da-6afc-4799-ad6c-05450175065f")
+	)
 	(global_label "ROT_SW"
 		(shape output)
 		(at 115.57 67.31 180)
@@ -986,6 +1207,38 @@
 		)
 		(property "Referenzen zwischen Schaltplänen" "${INTERSHEET_REFS}"
 			(at 115.57 69.1452 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SWITCH1"
+		(shape output)
+		(at 115.57 139.7 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9ba06201-e9cb-4b7d-a6d6-b4a7bc4d1c51")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 105.1957 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Referenzen zwischen Schaltplänen" "${INTERSHEET_REFS}"
+			(at 115.57 141.5352 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1138,6 +1391,69 @@
 	)
 	(symbol
 		(lib_id "OpenCyphalPicoBase-rescue:+3.3V-power-supply")
+		(at 135.89 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "24a45dce-5b4c-4e37-8d1c-e9c27f04baa0")
+		(property "Reference" "#PWR57"
+			(at 135.89 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 136.271 127.6858 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 135.89 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0852c18a-47e6-4464-9cbe-03490736609a")
+		)
+		(instances
+			(project "CyphalHMIBase-CAN"
+				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/946ce9e2-f514-4aac-a355-0a8039c4fd67"
+					(reference "#PWR57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OpenCyphalPicoBase-rescue:+3.3V-power-supply")
 		(at 133.35 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1194,6 +1510,74 @@
 			(project "CyphalHMIBase-CAN"
 				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/946ce9e2-f514-4aac-a355-0a8039c4fd67"
 					(reference "#PWR47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 147.32 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7bfbb927-f339-453d-a39a-db0a24606935")
+		(property "Reference" "SW2"
+			(at 147.32 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 147.32 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
+			(at 147.32 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 147.32 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c4dd7e10-8f80-4e43-af11-ce479886ea41")
+		)
+		(pin "1"
+			(uuid "ddc56e2a-e044-45be-b7f1-c203c935c51c")
+		)
+		(instances
+			(project ""
+				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/946ce9e2-f514-4aac-a355-0a8039c4fd67"
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -1349,7 +1733,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b42132b1-a6c5-4fe2-aeb7-c13257035e7f")
-		(property "Reference" "SW2"
+		(property "Reference" "SW3"
 			(at 151.13 78.74 0)
 			(effects
 				(font
@@ -1409,6 +1793,14 @@
 		)
 		(pin "S2"
 			(uuid "8b2660c5-7e3f-48ba-a2b5-d64538fa2975")
+		)
+		(instances
+			(project "CyphalHMIBase-CAN"
+				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/946ce9e2-f514-4aac-a355-0a8039c4fd67"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -1546,6 +1938,146 @@
 			(project "CyphalHMIBase-CAN"
 				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/946ce9e2-f514-4aac-a355-0a8039c4fd67"
 					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OpenCyphalPicoBase-rescue:GND-power-supply")
+		(at 154.94 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d1bdc3f0-8eb1-4321-b6ac-22b36ca8a642")
+		(property "Reference" "#PWR56"
+			(at 154.94 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 155.067 146.6342 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 154.94 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "baeff161-5f63-4689-89dd-cda960bcb1d1")
+		)
+		(instances
+			(project "CyphalHMIBase-CAN"
+				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/946ce9e2-f514-4aac-a355-0a8039c4fd67"
+					(reference "#PWR56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 135.89 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e0183f01-d7f7-4b66-bcb0-94308f07e9cd")
+		(property "Reference" "R22"
+			(at 137.3886 134.7216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 137.3886 137.033 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 135.89 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 135.89 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 135.89 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ebd40385-a12b-44cf-815c-1381593250e9")
+		)
+		(pin "2"
+			(uuid "b4eb0584-9c0f-4dee-b0e5-9f6cbdb632bb")
+		)
+		(instances
+			(project "CyphalHMIBase-CAN"
+				(path "/9d6d512e-1439-4aa2-b0d9-afb2dddd9146/946ce9e2-f514-4aac-a355-0a8039c4fd67"
+					(reference "R22")
 					(unit 1)
 				)
 			)

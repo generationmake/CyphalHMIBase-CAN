@@ -5,7 +5,7 @@
 	(uuid "9d6d512e-1439-4aa2-b0d9-afb2dddd9146")
 	(paper "A4")
 	(title_block
-		(title "CyphalIMUBase/CAN")
+		(title "CyphalHMIBase/CAN")
 		(date "2026-06-05")
 		(rev "0.1")
 		(company "generationmake")
@@ -2739,10 +2739,6 @@
 		(uuid "25738cc6-cd2e-487b-ade1-27ee12c16fa5")
 	)
 	(no_connect
-		(at 140.97 31.75)
-		(uuid "537d6aeb-f95f-42bc-9d99-260a19f487fc")
-	)
-	(no_connect
 		(at 93.98 193.04)
 		(uuid "7b78bfae-bbbd-471e-964c-4d523d9b0340")
 	)
@@ -3898,6 +3894,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 31.75) (xy 140.97 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f371079d-3523-4450-9161-50d64c1b0f09")
+	)
+	(wire
+		(pts
 			(xy 241.3 62.23) (xy 219.71 62.23)
 		)
 		(stroke
@@ -4152,6 +4158,16 @@
 			(justify left bottom)
 		)
 		(uuid "7dafabbe-6fc5-44e2-9fde-90206eadbe43")
+	)
+	(label "SWITCH1"
+		(at 133.35 31.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7f30fde5-7851-402a-a45b-56827cbd34e6")
 	)
 	(label "LED3"
 		(at 222.25 52.07 0)
@@ -4782,6 +4798,38 @@
 		)
 		(property "Referenzen zwischen Schaltplänen" "${INTERSHEET_REFS}"
 			(at 120.65 46.2852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SWITCH1"
+		(shape input)
+		(at 120.65 31.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dabf9f42-3537-447f-be6a-6ba20c2dad38")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 110.2757 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Referenzen zwischen Schaltplänen" "${INTERSHEET_REFS}"
+			(at 120.65 33.5852 0)
 			(effects
 				(font
 					(size 1.27 1.27)
