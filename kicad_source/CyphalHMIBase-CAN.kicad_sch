@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "CyphalHMIBase/CAN")
-		(date "2026-06-05")
+		(date "2026-06-06")
 		(rev "0.1")
 		(company "generationmake")
 	)
@@ -7716,7 +7716,7 @@
 	)
 	(symbol
 		(lib_id "OpenCyphalPicoBase-rescue:Label-devices")
-		(at 236.22 133.35 0)
+		(at 226.06 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -7724,7 +7724,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000625bb6fe")
 		(property "Reference" "L1"
-			(at 242.0112 130.6576 0)
+			(at 231.8512 130.6576 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7733,7 +7733,7 @@
 			)
 		)
 		(property "Value" "Label"
-			(at 242.0112 133.35 0)
+			(at 231.8512 133.35 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7741,8 +7741,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "labels:generationmake_small_silk"
-			(at 242.0112 136.0424 0)
+		(property "Footprint" "generationmake:generationmake_logo"
+			(at 231.8512 136.0424 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7751,7 +7751,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 236.22 133.35 0)
+			(at 226.06 133.35 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7759,7 +7759,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 236.22 133.35 0)
+			(at 226.06 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7778,7 +7778,7 @@
 	)
 	(symbol
 		(lib_id "OpenCyphalPicoBase-rescue:Label-devices")
-		(at 236.22 142.24 0)
+		(at 226.06 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -7786,7 +7786,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000625cacb9")
 		(property "Reference" "L2"
-			(at 242.0112 139.5476 0)
+			(at 231.8512 139.5476 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7795,7 +7795,7 @@
 			)
 		)
 		(property "Value" "Label"
-			(at 242.0112 142.24 0)
+			(at 231.8512 142.24 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7803,8 +7803,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "labels:generationmake_small_solder"
-			(at 242.0112 144.9324 0)
+		(property "Footprint" "generationmake:generationmake_small_solder"
+			(at 231.8512 144.9324 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7813,7 +7813,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 236.22 142.24 0)
+			(at 226.06 142.24 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7821,7 +7821,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 236.22 142.24 0)
+			(at 226.06 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7840,7 +7840,7 @@
 	)
 	(symbol
 		(lib_id "OpenCyphalPicoBase-rescue:Label-devices")
-		(at 236.22 151.13 0)
+		(at 226.06 151.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -7848,7 +7848,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000625e2d3c")
 		(property "Reference" "L3"
-			(at 242.0112 148.4376 0)
+			(at 231.8512 148.4376 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7857,7 +7857,7 @@
 			)
 		)
 		(property "Value" "Label"
-			(at 242.0112 151.13 0)
+			(at 231.8512 151.13 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7865,8 +7865,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "labels:opencyphal_small"
-			(at 242.0112 153.8224 0)
+		(property "Footprint" "generationmake:opencyphal_small"
+			(at 231.8512 153.8224 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7875,7 +7875,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 236.22 151.13 0)
+			(at 226.06 151.13 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7883,7 +7883,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 236.22 151.13 0)
+			(at 226.06 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7925,7 +7925,7 @@
 				)
 			)
 		)
-		(property "Footprint" "generationmake:RASPI_PICO_SOLDER_Kopie"
+		(property "Footprint" "generationmake:RASPI_PICO_SOLDER_ONLY"
 			(at 180.34 48.26 0)
 			(effects
 				(font
@@ -8473,7 +8473,7 @@
 	)
 	(symbol
 		(lib_id "OpenCyphalPicoBase-rescue:Label-devices")
-		(at 236.22 160.02 0)
+		(at 226.06 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -8481,7 +8481,7 @@
 		(dnp no)
 		(uuid "b3b51ab2-eedf-4a64-bef7-8767d2ae28a9")
 		(property "Reference" "L4"
-			(at 242.0112 157.3276 0)
+			(at 231.8512 157.3276 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8490,7 +8490,7 @@
 			)
 		)
 		(property "Value" "Label"
-			(at 242.0112 160.02 0)
+			(at 231.8512 160.02 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8499,7 +8499,7 @@
 			)
 		)
 		(property "Footprint" "generationmake:qwiic_logo"
-			(at 242.0112 162.7124 0)
+			(at 231.8512 162.7124 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8508,7 +8508,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 236.22 160.02 0)
+			(at 226.06 160.02 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8516,7 +8516,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 236.22 160.02 0)
+			(at 226.06 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
