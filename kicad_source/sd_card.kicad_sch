@@ -6,32 +6,45 @@
 	(paper "A4")
 	(title_block
 		(title "CyphalHMIBase/CAN")
-		(date "2026-06-06")
+		(date "2026-06-08")
 		(rev "0.1")
 		(company "generationmake")
 	)
 	(lib_symbols
-		(symbol "Connector:SD_Card_Device"
+		(symbol "Connector:Micro_SD_Card"
+			(pin_names
+				(offset 1.016)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at -11.938 17.018 0)
+				(at -16.51 15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "SD_Card_Device"
-				(at 9.144 -17.272 0)
+			(property "Value" "Micro_SD_Card"
+				(at 16.51 15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify right)
 				)
 			)
 			(property "Footprint" ""
+				(at 29.21 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.we-online.com/components/products/datasheet/693072010801.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -40,7 +53,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.convict.lu/pdf/ProdManualSDCardv1.9.pdf"
+			(property "Description" "Micro SD Card Socket"
 				(at 0 0 0)
 				(effects
 					(font
@@ -49,7 +62,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "SD card device/card "
+			(property "ki_keywords" "connector SD microsd"
 				(at 0 0 0)
 				(effects
 					(font
@@ -58,7 +71,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "connector SD"
+			(property "ki_fp_filters" "microSD*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -67,19 +80,10 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SD*Device*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SD_Card_Device_0_1"
+			(symbol "Micro_SD_Card_0_1"
 				(rectangle
-					(start -2.032 6.858)
-					(end -1.27 4.826)
+					(start -7.62 -9.525)
+					(end -5.08 -10.795)
 					(stroke
 						(width 0)
 						(type default)
@@ -89,8 +93,8 @@
 					)
 				)
 				(rectangle
-					(start -0.508 8.128)
-					(end 0.254 6.096)
+					(start -7.62 -6.985)
+					(end -5.08 -8.255)
 					(stroke
 						(width 0)
 						(type default)
@@ -100,8 +104,8 @@
 					)
 				)
 				(rectangle
-					(start 1.016 8.128)
-					(end 1.778 6.096)
+					(start -7.62 -4.445)
+					(end -5.08 -5.715)
 					(stroke
 						(width 0)
 						(type default)
@@ -111,8 +115,8 @@
 					)
 				)
 				(rectangle
-					(start 2.54 8.128)
-					(end 3.302 6.096)
+					(start -7.62 -1.905)
+					(end -5.08 -3.175)
 					(stroke
 						(width 0)
 						(type default)
@@ -122,8 +126,8 @@
 					)
 				)
 				(rectangle
-					(start 4.064 8.128)
-					(end 4.826 6.096)
+					(start -7.62 0.635)
+					(end -5.08 -0.635)
 					(stroke
 						(width 0)
 						(type default)
@@ -133,8 +137,8 @@
 					)
 				)
 				(rectangle
-					(start 5.588 8.128)
-					(end 6.35 6.096)
+					(start -7.62 3.175)
+					(end -5.08 1.905)
 					(stroke
 						(width 0)
 						(type default)
@@ -144,8 +148,8 @@
 					)
 				)
 				(rectangle
-					(start 7.112 8.128)
-					(end 7.874 6.096)
+					(start -7.62 5.715)
+					(end -5.08 4.445)
 					(stroke
 						(width 0)
 						(type default)
@@ -155,8 +159,8 @@
 					)
 				)
 				(rectangle
-					(start 8.636 8.128)
-					(end 9.398 6.096)
+					(start -7.62 8.255)
+					(end -5.08 6.985)
 					(stroke
 						(width 0)
 						(type default)
@@ -165,22 +169,23 @@
 						(type outline)
 					)
 				)
-				(rectangle
-					(start 10.16 8.128)
-					(end 10.922 6.096)
+				(polyline
+					(pts
+						(xy 16.51 12.7) (xy 16.51 13.97) (xy -19.05 13.97) (xy -19.05 -16.51) (xy 16.51 -16.51) (xy 16.51 -11.43)
+					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
-			)
-			(symbol "SD_Card_Device_1_1"
-				(rectangle
-					(start -12.7 15.24)
-					(end 12.7 -15.24)
+				(polyline
+					(pts
+						(xy -8.89 -11.43) (xy -8.89 8.89) (xy -1.27 8.89) (xy 2.54 12.7) (xy 3.81 12.7) (xy 3.81 11.43)
+						(xy 6.35 11.43) (xy 7.62 12.7) (xy 20.32 12.7) (xy 20.32 -11.43) (xy -8.89 -11.43)
+					)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -189,46 +194,12 @@
 						(type background)
 					)
 				)
-				(polyline
-					(pts
-						(xy -1.016 8.89) (xy 11.684 8.89) (xy 11.684 -9.144) (xy -2.794 -9.144) (xy -2.794 7.112) (xy -1.016 8.89)
-					)
-					(stroke
-						(width 0.3)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "1"
-					(at 0 4.826 0)
-					(effects
-						(font
-							(size 0.9 0.9)
-						)
-					)
-				)
-				(text "8"
-					(at 10.668 4.826 0)
-					(effects
-						(font
-							(size 0.9 0.9)
-						)
-					)
-				)
-				(text "9"
-					(at -1.778 3.556 0)
-					(effects
-						(font
-							(size 0.9 0.9)
-						)
-					)
-				)
+			)
+			(symbol "Micro_SD_Card_1_1"
 				(pin bidirectional line
-					(at -15.24 2.54 0)
-					(length 2.54)
-					(name "CD/DAT3"
+					(at -22.86 7.62 0)
+					(length 3.81)
+					(name "DAT2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -244,9 +215,9 @@
 					)
 				)
 				(pin bidirectional line
-					(at -15.24 -5.08 0)
-					(length 2.54)
-					(name "CMD"
+					(at -22.86 5.08 0)
+					(length 3.81)
+					(name "DAT3/CD"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -261,10 +232,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -17.78 90)
-					(length 2.54)
-					(name "VSS"
+				(pin input line
+					(at -22.86 2.54 0)
+					(length 3.81)
+					(name "CMD"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -280,8 +251,8 @@
 					)
 				)
 				(pin power_in line
-					(at 0 17.78 270)
-					(length 2.54)
+					(at -22.86 0 0)
+					(length 3.81)
 					(name "VDD"
 						(effects
 							(font
@@ -298,8 +269,8 @@
 					)
 				)
 				(pin input line
-					(at -15.24 -2.54 0)
-					(length 2.54)
+					(at -22.86 -2.54 0)
+					(length 3.81)
 					(name "CLK"
 						(effects
 							(font
@@ -315,9 +286,9 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -17.78 90)
-					(length 2.54) hide
+				(pin power_in line
+					(at -22.86 -5.08 0)
+					(length 3.81)
 					(name "VSS"
 						(effects
 							(font
@@ -334,8 +305,8 @@
 					)
 				)
 				(pin bidirectional line
-					(at -15.24 10.16 0)
-					(length 2.54)
+					(at -22.86 -7.62 0)
+					(length 3.81)
 					(name "DAT0"
 						(effects
 							(font
@@ -352,8 +323,8 @@
 					)
 				)
 				(pin bidirectional line
-					(at -15.24 7.62 0)
-					(length 2.54)
+					(at -22.86 -10.16 0)
+					(length 3.81)
 					(name "DAT1"
 						(effects
 							(font
@@ -369,10 +340,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -15.24 5.08 0)
-					(length 2.54)
-					(name "DAT2"
+				(pin passive line
+					(at 20.32 -15.24 180)
+					(length 3.81)
+					(name "SHIELD"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -847,9 +818,21 @@
 		(color 0 0 0 0)
 		(uuid "af5243d2-b832-4d65-9e82-7a6695e466cd")
 	)
+	(no_connect
+		(at 118.11 143.51)
+		(uuid "62560e7d-0f18-47dc-9a49-8fbda2f693f0")
+	)
+	(no_connect
+		(at 118.11 125.73)
+		(uuid "b8832c09-ca66-40aa-a7e7-1b791c3a5049")
+	)
+	(no_connect
+		(at 161.29 148.59)
+		(uuid "f98a8685-55d4-431d-ad28-407c1ea2edf9")
+	)
 	(wire
 		(pts
-			(xy 152.4 92.71) (xy 152.4 93.98)
+			(xy 80.01 83.82) (xy 80.01 85.09)
 		)
 		(stroke
 			(width 0)
@@ -869,17 +852,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 120.65) (xy 118.11 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1357eeb8-8fd0-42a7-8eda-2078d2c01205")
-	)
-	(wire
-		(pts
-			(xy 64.77 135.89) (xy 82.55 135.89)
+			(xy 64.77 130.81) (xy 82.55 130.81)
 		)
 		(stroke
 			(width 0)
@@ -889,17 +862,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 111.76) (xy 133.35 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ec4ce7c-3643-4e77-aebd-008ca50e509b")
-	)
-	(wire
-		(pts
-			(xy 64.77 133.35) (xy 82.55 133.35)
+			(xy 64.77 135.89) (xy 82.55 135.89)
 		)
 		(stroke
 			(width 0)
@@ -909,7 +872,27 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 133.35) (xy 118.11 133.35)
+			(xy 115.57 123.19) (xy 115.57 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46375a7b-d530-4207-b16b-9ad66a643204")
+	)
+	(wire
+		(pts
+			(xy 87.63 140.97) (xy 118.11 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a8cedc6-6d4b-4fed-83b7-9549551fd079")
+	)
+	(wire
+		(pts
+			(xy 87.63 135.89) (xy 118.11 135.89)
 		)
 		(stroke
 			(width 0)
@@ -929,6 +912,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 138.43) (xy 115.57 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "798191e2-db59-470a-beff-3a815ec6070c")
+	)
+	(wire
+		(pts
 			(xy 109.22 128.27) (xy 118.11 128.27)
 		)
 		(stroke
@@ -939,7 +932,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 148.59) (xy 133.35 149.86)
+			(xy 115.57 138.43) (xy 115.57 146.05)
 		)
 		(stroke
 			(width 0)
@@ -949,7 +942,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 135.89) (xy 118.11 135.89)
+			(xy 87.63 130.81) (xy 118.11 130.81)
 		)
 		(stroke
 			(width 0)
@@ -959,7 +952,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 99.06) (xy 152.4 100.33)
+			(xy 80.01 90.17) (xy 80.01 91.44)
 		)
 		(stroke
 			(width 0)
@@ -989,7 +982,17 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 120.65) (xy 82.55 120.65)
+			(xy 118.11 133.35) (xy 115.57 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f857afdb-c761-42c6-8c96-49dc5e3b641f")
+	)
+	(wire
+		(pts
+			(xy 64.77 140.97) (xy 82.55 140.97)
 		)
 		(stroke
 			(width 0)
@@ -998,7 +1001,7 @@
 		(uuid "fed70987-bc8a-44c5-aee8-afe081041a22")
 	)
 	(label "SPI1_SCK_R"
-		(at 104.14 133.35 180)
+		(at 104.14 135.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1008,7 +1011,7 @@
 		(uuid "62fae5b1-638b-47eb-9029-35de4c1cb74c")
 	)
 	(label "SPI1_MISO"
-		(at 77.47 120.65 180)
+		(at 77.47 140.97 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1018,7 +1021,7 @@
 		(uuid "84b6b1f6-18dd-42bf-893b-6b2d6cb2468b")
 	)
 	(label "SPI1_MISO_R"
-		(at 104.14 120.65 180)
+		(at 104.14 140.97 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1028,7 +1031,7 @@
 		(uuid "a1fd3935-1883-4ce0-83b9-8bc258377510")
 	)
 	(label "SPI1_MOSI_R"
-		(at 104.14 135.89 180)
+		(at 104.14 130.81 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1048,7 +1051,7 @@
 		(uuid "a965069c-a8e5-4aaa-b340-aa50ea5a6d8d")
 	)
 	(label "SPI1_MOSI"
-		(at 77.47 135.89 180)
+		(at 77.47 130.81 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1058,7 +1061,7 @@
 		(uuid "c0db06cc-f31e-43c8-9c42-c6c7e94e2fa3")
 	)
 	(label "SPI1_SCK"
-		(at 77.47 133.35 180)
+		(at 77.47 135.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1111,7 +1114,7 @@
 	)
 	(global_label "SPI1_MOSI"
 		(shape input)
-		(at 64.77 135.89 180)
+		(at 64.77 130.81 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1121,7 +1124,39 @@
 		)
 		(uuid "447e017a-1bf8-4efd-bd74-44619a316d27")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.5814 135.89 0)
+			(at 52.5814 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Referenzen zwischen Schaltplänen" "${INTERSHEET_REFS}"
+			(at 64.77 132.6452 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SPI1_SCK"
+		(shape input)
+		(at 64.77 135.89 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d4d4cb75-94ad-4205-b6c6-d89feeb93a20")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 53.4281 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1141,41 +1176,9 @@
 			)
 		)
 	)
-	(global_label "SPI1_SCK"
-		(shape input)
-		(at 64.77 133.35 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d4d4cb75-94ad-4205-b6c6-d89feeb93a20")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.4281 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Referenzen zwischen Schaltplänen" "${INTERSHEET_REFS}"
-			(at 64.77 135.1852 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SPI1_MISO"
 		(shape output)
-		(at 64.77 120.65 180)
+		(at 64.77 140.97 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1185,7 +1188,7 @@
 		)
 		(uuid "fec00a2a-3c4e-4bbb-8b4e-644299750596")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.5814 120.65 0)
+			(at 52.5814 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1195,7 +1198,7 @@
 			)
 		)
 		(property "Referenzen zwischen Schaltplänen" "${INTERSHEET_REFS}"
-			(at 64.77 122.4852 0)
+			(at 64.77 142.8052 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1207,7 +1210,7 @@
 	)
 	(symbol
 		(lib_id "OpenCyphalPicoBase-rescue:+3.3V-power-supply")
-		(at 133.35 111.76 0)
+		(at 115.57 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1215,7 +1218,7 @@
 		(dnp no)
 		(uuid "09aee2db-33d1-4698-8d0f-ddb577cfa760")
 		(property "Reference" "#PWR53"
-			(at 133.35 115.57 0)
+			(at 115.57 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1224,7 +1227,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 133.731 107.3658 0)
+			(at 115.951 118.7958 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1232,7 +1235,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 133.35 111.76 0)
+			(at 115.57 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1240,7 +1243,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 111.76 0)
+			(at 115.57 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1248,7 +1251,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 133.35 111.76 0)
+			(at 115.57 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1270,7 +1273,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 152.4 96.52 0)
+		(at 80.01 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1278,7 +1281,7 @@
 		(dnp no)
 		(uuid "190d4276-db01-444f-9889-120fe0cc8f81")
 		(property "Reference" "C8"
-			(at 154.7368 95.3516 0)
+			(at 82.3468 86.4616 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1287,7 +1290,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 154.7368 97.663 0)
+			(at 82.3468 88.773 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1296,7 +1299,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 152.4 100.33 0)
+			(at 80.01 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1305,7 +1308,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 96.52 0)
+			(at 80.01 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1313,7 +1316,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 152.4 96.52 0)
+			(at 80.01 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1322,7 +1325,7 @@
 			)
 		)
 		(property "LCSC" "C14663"
-			(at 152.4 96.52 0)
+			(at 80.01 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1346,44 +1349,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:SD_Card_Device")
-		(at 133.35 130.81 0)
+		(lib_id "Connector:Micro_SD_Card")
+		(at 140.97 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2d447b70-8c5b-4900-9f55-fbc215a98770")
+		(uuid "3471520f-180f-44ee-b3cb-5dbcd5279000")
 		(property "Reference" "J2"
-			(at 147.32 129.5399 0)
+			(at 141.605 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "SD_Card_Device"
-			(at 147.32 132.0799 0)
+		(property "Value" "Micro_SD_Card"
+			(at 141.605 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Card:microSD_HC_Molex_104031-0811"
-			(at 133.35 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.convict.lu/pdf/ProdManualSDCardv1.9.pdf"
-			(at 133.35 130.81 0)
+		(property "Footprint" "generationmake:WE_693071010811"
+			(at 170.18 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1391,8 +1383,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "SD card device/card"
-			(at 133.35 130.81 0)
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/693072010801.pdf"
+			(at 140.97 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1400,32 +1392,41 @@
 				(hide yes)
 			)
 		)
-		(pin "9"
-			(uuid "dbe9c753-dc66-4d2c-a0e0-264b940711e2")
-		)
-		(pin "7"
-			(uuid "c2f30242-662c-4890-9a0a-0b3c8b41490a")
-		)
-		(pin "6"
-			(uuid "b4f67bd8-3184-484f-abe6-3deb467f34bb")
-		)
-		(pin "5"
-			(uuid "9b41cd3c-c2dd-41b8-958a-abf5ca9e8252")
-		)
-		(pin "4"
-			(uuid "730a399a-b386-4cf5-a8af-574e526acd7b")
-		)
-		(pin "3"
-			(uuid "5e21c675-1e7a-4bc9-ba46-734aa79bcb02")
-		)
-		(pin "2"
-			(uuid "9927db43-3397-437b-97c0-1982a6d28136")
-		)
-		(pin "1"
-			(uuid "83fe600e-2cd1-4cdd-b033-636db9be0180")
+		(property "Description" "Micro SD Card Socket"
+			(at 140.97 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "8"
-			(uuid "950e3655-8288-415d-9769-59db0bd2b79e")
+			(uuid "af16dccb-0be8-4bc6-841a-833be6758aa4")
+		)
+		(pin "1"
+			(uuid "9e1966d9-f0e1-4db7-bdbd-655bdfbb3720")
+		)
+		(pin "2"
+			(uuid "b1367199-bb12-4c37-bc82-66fa5bcfb0d4")
+		)
+		(pin "9"
+			(uuid "f2f86b5e-64b1-4f38-970d-879b7a6e690c")
+		)
+		(pin "3"
+			(uuid "464cf89e-9240-4ba7-a741-e245d391cfec")
+		)
+		(pin "5"
+			(uuid "105cd5ff-c7c0-4e78-bbcb-e9bda3781c37")
+		)
+		(pin "6"
+			(uuid "35a75df0-7873-41ef-a9b9-19a89945e032")
+		)
+		(pin "4"
+			(uuid "c7bc040a-694e-4dca-a9cf-0b44f46fc855")
+		)
+		(pin "7"
+			(uuid "729ac400-0d5e-47d8-80b1-7433e825f201")
 		)
 		(instances
 			(project ""
@@ -1438,7 +1439,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 85.09 133.35 90)
+		(at 85.09 135.89 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1446,7 +1447,7 @@
 		(dnp no)
 		(uuid "35fe5c91-e485-4eee-9f82-bc21e9667b45")
 		(property "Reference" "R20"
-			(at 83.9216 131.8514 0)
+			(at 83.9216 134.3914 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1455,7 +1456,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 86.233 131.8514 0)
+			(at 86.233 134.3914 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1464,7 +1465,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 88.9 133.35 0)
+			(at 88.9 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1473,7 +1474,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 133.35 0)
+			(at 85.09 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1481,7 +1482,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 85.09 133.35 0)
+			(at 85.09 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1490,7 +1491,7 @@
 			)
 		)
 		(property "LCSC" "C22775"
-			(at 85.09 133.35 0)
+			(at 85.09 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1578,7 +1579,7 @@
 	)
 	(symbol
 		(lib_id "OpenCyphalPicoBase-rescue:GND-power-supply")
-		(at 133.35 149.86 0)
+		(at 115.57 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1586,7 +1587,7 @@
 		(dnp no)
 		(uuid "4aecfd22-f0d0-4e1b-816e-fc78668e4e54")
 		(property "Reference" "#PWR55"
-			(at 133.35 156.21 0)
+			(at 115.57 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1595,7 +1596,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 133.477 154.2542 0)
+			(at 115.697 150.4442 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1603,7 +1604,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 133.35 149.86 0)
+			(at 115.57 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1611,7 +1612,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 149.86 0)
+			(at 115.57 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1619,7 +1620,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 133.35 149.86 0)
+			(at 115.57 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1641,7 +1642,7 @@
 	)
 	(symbol
 		(lib_id "OpenCyphalPicoBase-rescue:GND-power-supply")
-		(at 152.4 100.33 0)
+		(at 80.01 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1649,7 +1650,7 @@
 		(dnp no)
 		(uuid "82e913a7-2e7e-4699-a630-3598375dfcd5")
 		(property "Reference" "#PWR52"
-			(at 152.4 106.68 0)
+			(at 80.01 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1658,7 +1659,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 152.527 104.7242 0)
+			(at 80.137 95.8342 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1666,7 +1667,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 100.33 0)
+			(at 80.01 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1674,7 +1675,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 100.33 0)
+			(at 80.01 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1682,7 +1683,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 152.4 100.33 0)
+			(at 80.01 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1704,7 +1705,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 85.09 120.65 90)
+		(at 85.09 140.97 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1712,7 +1713,7 @@
 		(dnp no)
 		(uuid "8538e5c3-0263-4079-a0b3-94cb89a7be2e")
 		(property "Reference" "R17"
-			(at 83.9216 119.1514 0)
+			(at 83.9216 139.4714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1721,7 +1722,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 86.233 119.1514 0)
+			(at 86.233 139.4714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1730,7 +1731,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 88.9 120.65 0)
+			(at 88.9 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1739,7 +1740,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 120.65 0)
+			(at 85.09 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1747,7 +1748,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 85.09 120.65 0)
+			(at 85.09 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1756,7 +1757,7 @@
 			)
 		)
 		(property "LCSC" "C22775"
-			(at 85.09 120.65 0)
+			(at 85.09 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1781,7 +1782,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 85.09 135.89 270)
+		(at 85.09 130.81 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1789,7 +1790,7 @@
 		(dnp no)
 		(uuid "8cd4fdc1-fdfe-4c94-9951-21c6eee10fd0")
 		(property "Reference" "R21"
-			(at 86.2584 137.3886 0)
+			(at 86.2584 132.3086 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1798,7 +1799,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 83.947 137.3886 0)
+			(at 83.947 132.3086 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1807,7 +1808,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 81.28 135.89 0)
+			(at 81.28 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1816,7 +1817,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 135.89 0)
+			(at 85.09 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1824,7 +1825,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 85.09 135.89 0)
+			(at 85.09 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1833,7 +1834,7 @@
 			)
 		)
 		(property "LCSC" "C22775"
-			(at 85.09 135.89 0)
+			(at 85.09 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2012,7 +2013,7 @@
 	)
 	(symbol
 		(lib_id "OpenCyphalPicoBase-rescue:+3.3V-power-supply")
-		(at 152.4 92.71 0)
+		(at 80.01 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2020,7 +2021,7 @@
 		(dnp no)
 		(uuid "d0088b3b-6810-49fc-a78f-e63c499e7506")
 		(property "Reference" "#PWR51"
-			(at 152.4 96.52 0)
+			(at 80.01 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2029,7 +2030,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 152.781 88.3158 0)
+			(at 80.391 79.4258 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2037,7 +2038,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 92.71 0)
+			(at 80.01 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2045,7 +2046,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 92.71 0)
+			(at 80.01 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2053,7 +2054,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 152.4 92.71 0)
+			(at 80.01 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
